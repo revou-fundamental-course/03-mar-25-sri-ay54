@@ -1,0 +1,153 @@
+html, body {
+    margin: 10;
+    padding: 10;
+}
+
+.main-header {
+    border: 4px solid #6e90a3de;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */ 
+.main-logo {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Mengatur gambar lokal agar center pada img */
+.main-logo img { 
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+} 
+
+.menu {
+    display: flex;
+}
+
+/* Ukuran tab menu */
+.menu>a {
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid;
+    text-decoration: none;
+    color: white; 
+    background-color: rgba(96, 131, 155, 0.781);
+}
+
+@media only screen and (max-width: 600px) {
+    .main-header {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* Slide image pada header */
+.banner-img {
+    height: 500px;
+    align-content: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Profil */
+.our-profile-content {
+    border: 1px solid white;
+    background-color: white;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.our-profile-content>img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 3px solid #ddd;
+    padding: 8px;
+}
+
+/* Training */
+.training-content { 
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    height: auto;
+}
+
+.training-content>div {
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    background-color: white;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.training-content>div>img {
+    border-radius: 40px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Messages */
+.message-us-content {
+    margin-left: 50px;
+    margin-right: 10px;
+    border-radius: 40px;
+    background-color: #E6E6FA;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    background-color: white;
+    padding: 5px;
+    padding: 50px 50px;
+    height: auto;
+    max-width: 100%;
+    flex-direction: row;
+    display: flex;
+}
+
+.message-us-content > div {
+    max-width: 100%;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 10px;
+    border-radius: 40px;
+    background-color: #E6E6FA;
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: center
+}
+
+footer {
+    text-align: center;
+}
