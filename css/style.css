@@ -1,0 +1,118 @@
+/* Ini file css */
+html, body {
+    margin: 10;
+    padding: 10;
+}
+
+.main-header {
+    border: 5px solid #6e90a3de;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */ 
+.main-logo {
+    
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* Mengatur gambar lokal agar center pada img */
+.main-logo img { 
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+} 
+
+.menu {
+    display: flex;
+}
+
+/* Ukuran tab menu*/
+.menu>a {
+    padding: 10px;
+    text-align: center;
+    border: 3px solid;
+    text-decoration: none;
+    color: #E6E6FA; 
+    background-color: rgba(96, 131, 155, 0.781);
+}
+
+@media only screen and (max-width: 600px) {
+    .main-header {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* Gambar pemandangan pada header */
+.banner-img {
+    height: 500px;
+    align-content: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-slice {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Profil */
+.our-profile-content {
+    /*border: 1px solid;*/
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+/* Training */
+.training-content { 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.training-content>div {
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+/* Messages */
+.message-us-content {
+    padding: 50px 50px;
+    height: 300px;
+    flex-direction: row;
+    display: flex;
+}
+
+.message-us-content > div {
+    display: flex;
+    flex: 1;
+    margin-right: 30px;
+    justify-content: center
+}
+
+footer {
+    text-align: center;
+}
